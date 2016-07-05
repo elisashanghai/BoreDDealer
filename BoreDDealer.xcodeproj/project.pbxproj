@@ -12,6 +12,7 @@
 		610E92111D2C611F00522DFF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 610E920F1D2C611F00522DFF /* Main.storyboard */; };
 		610E92131D2C611F00522DFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 610E92121D2C611F00522DFF /* Assets.xcassets */; };
 		610E92161D2C611F00522DFF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 610E92141D2C611F00522DFF /* LaunchScreen.storyboard */; };
+		B1B491274A48AF4CCB7DC728 /* Pods_BoreDDealer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D012D134726485E9DA87BBAE /* Pods_BoreDDealer.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,9 @@
 		610E92121D2C611F00522DFF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		610E92151D2C611F00522DFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		610E92171D2C611F00522DFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF4F21ED451E7769347A0A5F /* Pods-BoreDDealer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoreDDealer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BoreDDealer/Pods-BoreDDealer.debug.xcconfig"; sourceTree = "<group>"; };
+		D012D134726485E9DA87BBAE /* Pods_BoreDDealer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BoreDDealer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E589F8DBC1D17A1E4611F080 /* Pods-BoreDDealer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoreDDealer.release.xcconfig"; path = "Pods/Target Support Files/Pods-BoreDDealer/Pods-BoreDDealer.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1B491274A48AF4CCB7DC728 /* Pods_BoreDDealer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		53508850CD320711E1482F3C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CF4F21ED451E7769347A0A5F /* Pods-BoreDDealer.debug.xcconfig */,
+				E589F8DBC1D17A1E4611F080 /* Pods-BoreDDealer.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		610E91FF1D2C611F00522DFF = {
 			isa = PBXGroup;
 			children = (
 				610E920A1D2C611F00522DFF /* BoreDDealer */,
 				610E92091D2C611F00522DFF /* Products */,
+				53508850CD320711E1482F3C /* Pods */,
+				FFFE4909FCE23A552C0189F7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +80,14 @@
 			path = BoreDDealer;
 			sourceTree = "<group>";
 		};
+		FFFE4909FCE23A552C0189F7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D012D134726485E9DA87BBAE /* Pods_BoreDDealer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 610E921A1D2C611F00522DFF /* Build configuration list for PBXNativeTarget "BoreDDealer" */;
 			buildPhases = (
+				19C9510FEAA64CC457547BE1 /* [CP] Check Pods Manifest.lock */,
 				610E92041D2C611F00522DFF /* Sources */,
 				610E92051D2C611F00522DFF /* Frameworks */,
 				610E92061D2C611F00522DFF /* Resources */,
+				9C4329BCFBD1C4B0471DB58A /* [CP] Embed Pods Frameworks */,
+				784726D93FFE3EA753217C37 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		19C9510FEAA64CC457547BE1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		784726D93FFE3EA753217C37 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BoreDDealer/Pods-BoreDDealer-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9C4329BCFBD1C4B0471DB58A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BoreDDealer/Pods-BoreDDealer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		610E92041D2C611F00522DFF /* Sources */ = {
@@ -250,6 +325,7 @@
 		};
 		610E921B1D2C611F00522DFF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF4F21ED451E7769347A0A5F /* Pods-BoreDDealer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BoreDDealer/Info.plist;
@@ -261,6 +337,7 @@
 		};
 		610E921C1D2C611F00522DFF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E589F8DBC1D17A1E4611F080 /* Pods-BoreDDealer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BoreDDealer/Info.plist;
@@ -289,6 +366,7 @@
 				610E921C1D2C611F00522DFF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
