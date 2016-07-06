@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C0CE6071D2D64F4001E2E80 /* ActivityHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0CE6061D2D64F4001E2E80 /* ActivityHelper.swift */; };
 		610E920C1D2C611F00522DFF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610E920B1D2C611F00522DFF /* AppDelegate.swift */; };
 		610E920E1D2C611F00522DFF /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610E920D1D2C611F00522DFF /* StartViewController.swift */; };
 		610E92111D2C611F00522DFF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 610E920F1D2C611F00522DFF /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3C0CE6061D2D64F4001E2E80 /* ActivityHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityHelper.swift; sourceTree = "<group>"; };
 		610E92081D2C611F00522DFF /* BoreDDealer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BoreDDealer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		610E920B1D2C611F00522DFF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		610E920D1D2C611F00522DFF /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
@@ -44,6 +46,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3C0CE6031D2D64B9001E2E80 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				3C0CE6061D2D64F4001E2E80 /* ActivityHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		53508850CD320711E1482F3C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -74,6 +84,7 @@
 		610E920A1D2C611F00522DFF /* BoreDDealer */ = {
 			isa = PBXGroup;
 			children = (
+				3C0CE6031D2D64B9001E2E80 /* Helpers */,
 				6158E4B91D2C7183006E402C /* View Controllers */,
 				610E920B1D2C611F00522DFF /* AppDelegate.swift */,
 				610E920F1D2C611F00522DFF /* Main.storyboard */,
@@ -227,6 +238,7 @@
 			files = (
 				610E920E1D2C611F00522DFF /* StartViewController.swift in Sources */,
 				6158E4BB1D2C71F0006E402C /* TimeSelectionViewController.swift in Sources */,
+				3C0CE6071D2D64F4001E2E80 /* ActivityHelper.swift in Sources */,
 				610E920C1D2C611F00522DFF /* AppDelegate.swift in Sources */,
 				6158E4BD1D2C7218006E402C /* ActivityViewController.swift in Sources */,
 			);
