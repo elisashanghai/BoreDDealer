@@ -12,12 +12,12 @@ class TimeSelectionViewController: UIViewController {
 
     
     @IBAction func tap30Min(sender: AnyObject) {
-        let activity = Activity(title: "", duration: ActivityDuration.ThirtyMin)
+        let activity = Activity(title: "", duration: .ThirtyMin)
         activity.pickActivity(1)
     
     }
     @IBAction func tap1Hr(sender: AnyObject) {
-        let activity2 = Activity(title: "", duration: ActivityDuration.SixtyMin)
+        let activity2 = Activity(title: "", duration: .SixtyMin)
         activity2.pickActivity(2)
     }
 

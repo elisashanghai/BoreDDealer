@@ -44,6 +44,7 @@ class Activity {
             print(activity.title)
         }
     }
+    
     // array of long activities
         
     static var longArray = [Activity(title: "Watch a movie that you've never watched before!",                  duration: .SixtyMin),
@@ -63,7 +64,6 @@ class Activity {
         }
     }
     
-
     func pickActivity(choice: Int) {
                 if choice == 1 {
                     let randomIndex = Int(arc4random_uniform(UInt32(Activity.shortArray.count)))
