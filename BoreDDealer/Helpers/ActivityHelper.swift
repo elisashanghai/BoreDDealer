@@ -8,14 +8,3 @@
 
 import Foundation
 
-class ListOfActivities {
-    
-    
-}
-
-////class Activity: ListOfActivities {
-//    
-//    var activityList = [ListOfActivities]()
-//    
-//    //    }
-//
