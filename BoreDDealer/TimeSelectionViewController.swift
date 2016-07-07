@@ -10,6 +10,18 @@ import UIKit
 
 class TimeSelectionViewController: UIViewController {
 
+    
+    @IBAction func tap30Min(sender: AnyObject) {
+        let activity = Activity(title: "", duration: ActivityDuration.ThirtyMin)
+        activity.pickActivity(1)
+    
+    }
+    @IBAction func tap1Hr(sender: AnyObject) {
+        let activity2 = Activity(title: "", duration: ActivityDuration.SixtyMin)
+        activity2.pickActivity(2)
+    }
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -20,6 +32,7 @@ class TimeSelectionViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
     
 
     /*
