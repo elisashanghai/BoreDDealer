@@ -17,26 +17,40 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zhs-mh-0t3">
-                                <rect key="frame" x="210" y="87" width="180" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zhs-mh-0t3">
+                                <rect key="frame" x="214" y="87" width="172" height="30"/>
                                 <state key="normal" title="Click here to take a selfie"/>
+                                <connections>
+                                    <action selector="takeSelfie:" destination="BYZ-38-t0r" eventType="touchUpInside" id="biO-Oy-RAH"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JnJ-Gn-Few">
                                 <rect key="frame" x="264" y="373" width="84" height="30"/>
                                 <state key="normal" title="View history"/>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yNM-E5-L3V">
+                                <rect key="frame" x="0.0" y="131" width="600" height="234"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="JnJ-Gn-Few" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="264" id="4Tw-dX-nQo"/>
+                            <constraint firstItem="yNM-E5-L3V" firstAttribute="centerX" secondItem="zhs-mh-0t3" secondAttribute="centerX" id="7bO-TQ-2LH"/>
                             <constraint firstItem="zhs-mh-0t3" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="67" id="O1b-TO-fFd"/>
+                            <constraint firstItem="yNM-E5-L3V" firstAttribute="top" secondItem="zhs-mh-0t3" secondAttribute="bottom" constant="14" id="UyU-ax-Xbx"/>
                             <constraint firstItem="zhs-mh-0t3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bAf-o2-Vg7"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="JnJ-Gn-Few" secondAttribute="bottom" constant="197" id="egM-R3-WL9"/>
+                            <constraint firstItem="yNM-E5-L3V" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="oBl-7C-xFs"/>
+                            <constraint firstItem="JnJ-Gn-Few" firstAttribute="top" secondItem="yNM-E5-L3V" secondAttribute="bottom" constant="8" symbolic="YES" id="pfr-Ep-tsw"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imagePicked" destination="yNM-E5-L3V" id="pHD-sv-qR7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="245" y="233"/>
         </scene>
         <!--Time Selection View Controller-->
         <scene sceneID="G7v-Iv-uGk">
@@ -93,7 +107,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Activity" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9CD-QX-jcM">
                                 <rect key="frame" x="253" y="170" width="57" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DsO-ea-FQJ">
