@@ -110,29 +110,29 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DsO-ea-FQJ">
-                                <rect key="frame" x="139" y="381" width="67" height="30"/>
-                                <state key="normal" title="Let's do it"/>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H8G-Km-hRz">
-                                <rect key="frame" x="372" y="381" width="63" height="30"/>
+                                <rect key="frame" x="455" y="381" width="63" height="30"/>
                                 <state key="normal" title="Try again"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DsO-ea-FQJ">
+                                <rect key="frame" x="68" y="381" width="67" height="30"/>
+                                <state key="normal" title="Let's do it"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="DsO-ea-FQJ" firstAttribute="baseline" secondItem="H8G-Km-hRz" secondAttribute="baseline" id="BWX-CH-eYN"/>
                             <constraint firstItem="NzG-go-pxD" firstAttribute="top" secondItem="DsO-ea-FQJ" secondAttribute="bottom" constant="189" id="Okg-9t-pmK"/>
-                            <constraint firstAttribute="trailing" secondItem="H8G-Km-hRz" secondAttribute="trailing" constant="165" id="Or0-9D-o55"/>
+                            <constraint firstAttribute="trailing" secondItem="H8G-Km-hRz" secondAttribute="trailing" constant="82" id="Or0-9D-o55"/>
                             <constraint firstItem="9CD-QX-jcM" firstAttribute="top" secondItem="qVl-0D-9BA" secondAttribute="bottom" constant="150" id="keh-NN-qsn"/>
-                            <constraint firstItem="DsO-ea-FQJ" firstAttribute="leading" secondItem="UVT-mC-R8Z" secondAttribute="leading" constant="139" id="mCx-JZ-0FK"/>
+                            <constraint firstItem="DsO-ea-FQJ" firstAttribute="leading" secondItem="UVT-mC-R8Z" secondAttribute="leading" constant="68" id="mCx-JZ-0FK"/>
                             <constraint firstItem="9CD-QX-jcM" firstAttribute="leading" secondItem="UVT-mC-R8Z" secondAttribute="leading" constant="253" id="upU-Sa-j9L"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JOQ-A6-OsU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="921" y="909"/>
+            <point key="canvasLocation" x="1609" y="222"/>
         </scene>
     </scenes>
 </document>
