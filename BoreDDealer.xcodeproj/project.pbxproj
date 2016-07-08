@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3C0CE6071D2D64F4001E2E80 /* ActivityHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0CE6061D2D64F4001E2E80 /* ActivityHelper.swift */; };
+		3C0CE6091D2EDE33001E2E80 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0CE6081D2EDE33001E2E80 /* Activity.swift */; };
 		610E920C1D2C611F00522DFF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610E920B1D2C611F00522DFF /* AppDelegate.swift */; };
 		610E920E1D2C611F00522DFF /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610E920D1D2C611F00522DFF /* StartViewController.swift */; };
 		610E92111D2C611F00522DFF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 610E920F1D2C611F00522DFF /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		3C0CE6061D2D64F4001E2E80 /* ActivityHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityHelper.swift; sourceTree = "<group>"; };
+		3C0CE6081D2EDE33001E2E80 /* Activity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		610E92081D2C611F00522DFF /* BoreDDealer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BoreDDealer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		610E920B1D2C611F00522DFF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		610E920D1D2C611F00522DFF /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 				610E920D1D2C611F00522DFF /* StartViewController.swift */,
 				6158E4BA1D2C71F0006E402C /* TimeSelectionViewController.swift */,
 				6158E4BC1D2C7218006E402C /* ActivityViewController.swift */,
+				3C0CE6081D2EDE33001E2E80 /* Activity.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -236,6 +239,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C0CE6091D2EDE33001E2E80 /* Activity.swift in Sources */,
 				610E920E1D2C611F00522DFF /* StartViewController.swift in Sources */,
 				6158E4BB1D2C71F0006E402C /* TimeSelectionViewController.swift in Sources */,
 				3C0CE6071D2D64F4001E2E80 /* ActivityHelper.swift in Sources */,
@@ -356,10 +360,13 @@
 			baseConfigurationReference = CF4F21ED451E7769347A0A5F /* Pods-BoreDDealer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = BoreDDealer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.makeschool.BoreDDealer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -368,10 +375,12 @@
 			baseConfigurationReference = E589F8DBC1D17A1E4611F080 /* Pods-BoreDDealer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = BoreDDealer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.makeschool.BoreDDealer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 			};
 			name = Release;
 		};

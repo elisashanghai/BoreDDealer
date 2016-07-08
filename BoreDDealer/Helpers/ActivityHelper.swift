@@ -6,6 +6,8 @@
 //  Copyright © 2016 WhenYouBored. All rights reserved.
 //
 
+import Foundation
+
 //import Foundation
 //
 //struct Activity {
