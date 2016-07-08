@@ -76,7 +76,7 @@
                                     <segue destination="BZj-Hq-nXe" kind="show" identifier="shortActivityView" id="YIc-Tz-Zrp"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wiV-WU-Y4j">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wiV-WU-Y4j">
                                 <rect key="frame" x="250" y="439" width="100" height="30"/>
                                 <state key="normal" title="1 hour or more"/>
                                 <connections>
