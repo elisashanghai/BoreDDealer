@@ -24,24 +24,24 @@
                                     <action selector="takeSelfie:" destination="BYZ-38-t0r" eventType="touchUpInside" id="biO-Oy-RAH"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yNM-E5-L3V">
+                                <rect key="frame" x="0.0" y="131" width="600" height="415"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JnJ-Gn-Few">
-                                <rect key="frame" x="264" y="373" width="84" height="30"/>
+                                <rect key="frame" x="265" y="545" width="84" height="30"/>
                                 <state key="normal" title="View history"/>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yNM-E5-L3V">
-                                <rect key="frame" x="0.0" y="131" width="600" height="234"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="JnJ-Gn-Few" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="264" id="4Tw-dX-nQo"/>
+                            <constraint firstItem="JnJ-Gn-Few" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="265" id="4Tw-dX-nQo"/>
                             <constraint firstItem="yNM-E5-L3V" firstAttribute="centerX" secondItem="zhs-mh-0t3" secondAttribute="centerX" id="7bO-TQ-2LH"/>
                             <constraint firstItem="zhs-mh-0t3" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="67" id="O1b-TO-fFd"/>
                             <constraint firstItem="yNM-E5-L3V" firstAttribute="top" secondItem="zhs-mh-0t3" secondAttribute="bottom" constant="14" id="UyU-ax-Xbx"/>
                             <constraint firstItem="zhs-mh-0t3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bAf-o2-Vg7"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="JnJ-Gn-Few" secondAttribute="bottom" constant="197" id="egM-R3-WL9"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="JnJ-Gn-Few" secondAttribute="bottom" constant="25" id="egM-R3-WL9"/>
                             <constraint firstItem="yNM-E5-L3V" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="oBl-7C-xFs"/>
-                            <constraint firstItem="JnJ-Gn-Few" firstAttribute="top" secondItem="yNM-E5-L3V" secondAttribute="bottom" constant="8" symbolic="YES" id="pfr-Ep-tsw"/>
+                            <constraint firstItem="JnJ-Gn-Few" firstAttribute="top" secondItem="yNM-E5-L3V" secondAttribute="bottom" constant="-1" id="pfr-Ep-tsw"/>
                         </constraints>
                     </view>
                     <connections>
