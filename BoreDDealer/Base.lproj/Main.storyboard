@@ -69,20 +69,20 @@
                                 <state key="normal" title="Profile photo"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J64-ov-FMs">
-                                <rect key="frame" x="276" y="221" width="48" height="30"/>
-                                <state key="normal" title="30 min"/>
+                                <rect key="frame" x="262" y="367" width="77" height="30"/>
+                                <state key="normal" title="30 minutes"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wiV-WU-Y4j">
-                                <rect key="frame" x="280" y="379" width="41" height="30"/>
-                                <state key="normal" title="1-2 hr"/>
+                                <rect key="frame" x="250" y="483" width="100" height="30"/>
+                                <state key="normal" title="1 hour or more"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="J64-ov-FMs" firstAttribute="top" secondItem="Sbx-GY-eJF" secondAttribute="top" constant="221" id="Ijw-Yw-00i"/>
+                            <constraint firstItem="J64-ov-FMs" firstAttribute="top" secondItem="Sbx-GY-eJF" secondAttribute="top" constant="367" id="Ijw-Yw-00i"/>
                             <constraint firstItem="f9L-ni-ZND" firstAttribute="centerX" secondItem="Sbx-GY-eJF" secondAttribute="centerX" id="Pwi-gB-zCf"/>
                             <constraint firstItem="f9L-ni-ZND" firstAttribute="top" secondItem="gSh-Mw-cSi" secondAttribute="bottom" constant="46" id="Qgu-vz-t6S"/>
-                            <constraint firstItem="roW-cf-KiG" firstAttribute="top" secondItem="wiV-WU-Y4j" secondAttribute="bottom" constant="191" id="W3r-fe-pci"/>
+                            <constraint firstItem="roW-cf-KiG" firstAttribute="top" secondItem="wiV-WU-Y4j" secondAttribute="bottom" constant="87" id="W3r-fe-pci"/>
                             <constraint firstItem="f9L-ni-ZND" firstAttribute="centerX" secondItem="wiV-WU-Y4j" secondAttribute="centerX" id="jqa-Ob-jit"/>
                             <constraint firstItem="J64-ov-FMs" firstAttribute="centerX" secondItem="f9L-ni-ZND" secondAttribute="centerX" id="mkF-6i-Bcm"/>
                         </constraints>
