@@ -12,6 +12,12 @@ class ShortActivityViewController: UIViewController {
 
     @IBOutlet weak var shortActivityLabel: UILabel!
     
+    @IBAction func moreOptionsShort(sender: AnyObject) {
+       
+        let randomShortAct = Activity(title: "Title is Me!!", duration: .ThirtyMin)
+        shortActivityLabel.text = randomShortAct.pickActivity(1)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         let randomShortAct = Activity(title: "Title is Me!!", duration: .ThirtyMin)
