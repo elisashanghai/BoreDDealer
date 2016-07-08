@@ -36,7 +36,7 @@ class Activity {
                              Activity(title: "Learn about a sport that's popular in another country besides the one you reside in!", duration: .ThirtyMin),
                              Activity(title: "Make a drawing of the first thing you see when you step outside", duration: .ThirtyMin),
                              Activity(title: "Make a video of something you'd like to tell your 'future self'!", duration: .ThirtyMin),
-                             Activity(title: "Learn a new type of dance (something that's foreign to where you're from!", duration: .ThirtyMin)]
+                             Activity(title: "Learn a new type of dance (something that's foreign to where you're from)!", duration: .ThirtyMin)]
     
     
     func getShortActivityTitle() {
@@ -55,7 +55,7 @@ class Activity {
                             Activity(title: "Try doing Zumba!", duration: .SixtyMin),
                             Activity(title: "Treat yourself to a 'Me Day'! Go spoil yourself!", duration: .SixtyMin),
                             Activity(title: "Play one of your favorite games from your childhood!", duration: .SixtyMin),
-                            Activity(title: "Roll up your extra change and come up with a creative way to spend it! It doesn't matter how little you have!", duration: .SixtyMin),
+                            Activity(title: "Look up funny videos on YouTube!", duration: .SixtyMin),
                             Activity(title: "Plan the 'perfect' vacation getaway that you'd like to go on!", duration: .SixtyMin)]
     
     func getLongActivityTitle() {
@@ -64,16 +64,16 @@ class Activity {
         }
     }
     
-    func pickActivity(choice: Int) {
+    func pickActivity(choice: Int) -> String {
                 if choice == 1 {
                     let randomIndex = Int(arc4random_uniform(UInt32(Activity.shortArray.count)))
                     let removeActivity = Activity.shortArray.removeAtIndex(randomIndex)
-                    print(removeActivity.title)
+                    return removeActivity.title
                 }
                 else {
                     let randomIndex2 = Int(arc4random_uniform(UInt32(Activity.longArray.count)))
                     let removeActivity2 = Activity.longArray.removeAtIndex(randomIndex2)
-                    print(removeActivity2.title)
+                    return removeActivity2.title
                     
                 }
                 
