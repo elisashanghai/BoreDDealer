@@ -131,6 +131,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H8G-Km-hRz">
                                 <rect key="frame" x="475" y="390" width="95" height="30"/>
                                 <state key="normal" title="More options!"/>
+                                <connections>
+                                    <action selector="moreOptionsShort:" destination="BZj-Hq-nXe" eventType="touchUpInside" id="SZe-SV-0YN"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -197,7 +200,7 @@
                                 </constraints>
                                 <state key="normal" title="More options!"/>
                                 <connections>
-                                    <action selector="moreOptionsLong:" destination="Yml-AY-mut" eventType="touchUpInside" id="2xh-Hy-7qZ"/>
+                                    <action selector="moreOptionsLong:" destination="Yml-AY-mut" eventType="touchUpInside" id="Hyd-jR-0bq"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uM4-fu-k7r">
@@ -237,6 +240,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Nb4-5i-9lY"/>
+        <segue reference="0PX-d1-VLh"/>
     </inferredMetricsTieBreakers>
 </document>
